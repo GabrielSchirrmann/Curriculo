@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gabriel Faria - Currículo Sci-Fi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(ellipse at center, #000a1f 0%, #000000 100%);
+      font-family: 'Orbitron', sans-serif;
+      color: #00f0ff;
+      overflow-x: hidden;
+    }
+
+    .hud-frame {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      background: rgba(0, 255, 255, 0.05);
+      border: 2px solid #00f0ff;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00f0ff55;
+      position: relative;
+      margin-top: 50px;
+    }
+
+    .hud-title {
+      text-align: center;
+      font-size: 24px;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff;
+      margin-bottom: 20px;
+    }
+
+    .hud-section {
+      margin-bottom: 40px;
+    }
+
+    .hud-label {
+      font-weight: bold;
+      color: #00ffff;
+    }
+
+    .hud-bar {
+      height: 12px;
+      background: #002b33;
+      border: 1px solid #00ffff;
+      margin-top: 5px;
+      position: relative;
+      border-radius: 5px;
+    }
+
+    .hud-bar-fill {
+      height: 100%;
+      background: linear-gradient(to right, #00f0ff, #0088ff);
+      width: 0;
+      animation: fillBar 2s ease-out forwards;
+    }
+
+    @keyframes fillBar {
+      to {
+        width: var(--level);
+      }
+    }
+
+    .grid-lines {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 255, 0.1),
+        rgba(0, 255, 255, 0.1) 1px,
+        transparent 1px,
+        transparent 20px
+      );
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-lines"></div>
+  <div class="hud-frame">
+    <div class="hud-title">Gabriel Schirrmann Faria // Interface J.A.R.V.I.S</div>
+
+    <div class="hud-section">
+      <p><span class="hud-label">Idade:</span> 20 anos</p>
+      <p><span class="hud-label">Endereço:</span> Rua das Acerolas, Nº 141, Jardim Celeste</p>
+    </div>
+
+    <div class="hud-section">
+      <h2 class="hud-label">Formação</h2>
+      <p>- Ensino médio completo - EEMT (2022)</p>
+      <p>- Engenharia da Computação - Faculdade de Tecnologia de Sinop (Desde 2024)</p>
+    </div>
+
+    <div class="hud-section">
+      <h2 class="hud-label">Experiência Profissional</h2>
+      <p>- Atendente Havan (2023)</p>
+      <p>- Vendedor Eletro Havan (2023-2024)</p>
+      <p>- Técnico T.I - Colégio Alternativo (atualmente)</p>
+    </div>
+
+    <div class="hud-section">
+      <h2 class="hud-label">Habilidades</h2>
+      <p>HTML</p>
+      <div class="hud-bar"><div class="hud-bar-fill" style="--level: 90%;"></div></div>
+      <p>CSS</p>
+      <div class="hud-bar"><div class="hud-bar-fill" style="--level: 80%;"></div></div>
+      <p>Python</p>
+      <div class="hud-bar"><div class="hud-bar-fill" style="--level: 75%;"></div></div>
+      <p>Comunicação</p>
+      <div class="hud-bar"><div class="hud-bar-fill" style="--level: 85%;"></div></div>
+    </div>
+
+    <div class="hud-section">
+      <h2 class="hud-label">Contato</h2>
+      <p>📱 <a href="tel:+5566981269801" style="color: #00ffff;">(66) 98126-9801</a></p>
+      <p>📧 <a href="mailto:gabrielschirrmannfarias@gmail.com" style="color: #00ffff;">gabrielschirrmannfarias@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+
+</html>

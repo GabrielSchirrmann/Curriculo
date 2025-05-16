@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Currículo - Gabriel Schirrmann Faria</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #121212;
+      font-family: 'Orbitron', sans-serif;
+      color: #FF6F00;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pagina-a4 {
+      background: #1e1e1e;
+      border: 2px solid #FF6F00;
+      border-radius: 15px;
+      padding: 40px 50px;
+      width: 850px;
+      box-shadow:
+        0 0 20px #FF6F00aa,
+        inset 0 0 30px #FF6F00bb;
+      position: relative;
+
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="104" viewBox="0 0 120 104"><polygon points="30,2 90,2 120,52 90,102 30,102 0,52" fill="none" stroke="%23FF6F00" stroke-width="2" opacity="0.1"/></svg>');
+      background-repeat: repeat;
+      background-position: center;
+      background-size: 120px 104px;
+    }
+
+    .foto {
+      float: right;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 3px solid #FF6F00;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #FF6F00aa;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    h1, h2 {
+      color: #FF6F00;
+      letter-spacing: 3px;
+      text-align: center;
+      margin: 40px 0 25px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow:
+        0 0 10px #FF6F00cc,
+        0 0 20px #D84315cc;
+    }
+
+    p {
+      margin: 6px 0;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #ffa040;
+      text-shadow: 0 0 3px #FF6F00aa;
+    }
+
+    .info-pessoal p {
+      max-width: 520px;
+    }
+
+    footer {
+      margin-top: 50px;
+      border-top: 1px solid #FF6F00;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .habilidades {
+      margin-top: 50px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 6px;
+      letter-spacing: 1.5px;
+      color: #FF8F00;
+      text-shadow: 0 0 8px #FF6F00cc;
+    }
+
+    .skill-bar {
+      position: relative;
+      width: 100%;
+      height: 28px;
+      background: #2a2a2a;
+      border: 2px solid #FF6F00;
+      border-radius: 14px;
+      box-shadow:
+        inset 0 0 8px #FF6F00aa,
+        0 0 10px #FF6F00cc;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 14px 0 0 14px;
+      background: linear-gradient(90deg, #FF6F00, #D84315);
+      box-shadow:
+        0 0 10px #FF6F00cc,
+        0 0 20px #D84315cc;
+      transition: width 0.5s ease-in-out;
+    }
+
+    .skill-percent {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 0 5px #FF6F00cc;
+      font-size: 14px;
+      user-select: none;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    @media (max-width: 900px) {
+      .pagina-a4 {
+        width: 100%;
+        padding: 30px 20px;
+      }
+
+      .foto {
+        float: none;
+        display: block;
+        margin: 0 auto 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <audio autoplay loop controls>
+    <source src="circulodefogo.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <div class="pagina-a4">
+    <img src="foto zueira.jpg" alt="Foto de Gabriel" class="foto" />
+
+    <div class="info-pessoal">
+      <p><strong>Nome:</strong> Gabriel Schirrmann Faria</p>
+      <p><strong>Idade:</strong> 20 anos</p> 
+      <p><strong>Estado civil:</strong> Solteiro</p>
+      <p><strong>Nacionalidade:</strong> Brasileiro</p> 
+      <p><strong>Endereço:</strong> Rua das Acerolas, N° 141, Jardim Celeste</p>
+    </div>
+
+    <div class="clear"></div>
+
+    <h1>Formação Acadêmica</h1>
+    <p>Ensino médio completo pela Escola Estadual Militar Tiradentes de Sinop "EEMT" (Completo em 2022)</p>
+    <p>Cursando Engenharia da computação na Faculdade de tecnologia de Sinop (Início em 2024)</p>
+
+    <h1>Experiência Profissional</h1>
+    <p>Atendimento ao cliente nas lojas de departamentos Havan (06/09/23 - 20/12/23)</p>
+    <p>Vendedor de eletro nas lojas de departamentos Havan (21/12/23 - 09/09/24)</p>
+    <p>Técnico de T.I no colégio Alternativo (14/11/24 - atualidade)</p>
+
+    <section class="habilidades">
+      <h1>Habilidades</h1>
+
+      <div class="skill">
+        <div class="skill-name">Comunicação</div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 90%;"></div>
+          <div class="skill-percent">90%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Trabalho em equipe</div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 50%;"></div>
+          <div class="skill-percent">50%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Proatividade</div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 75%;"></div>
+          <div class="skill-percent">75%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Pontualidade</div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 80%;"></div>
+          <div class="skill-percent">80%</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h1>Contatos</h1>
+      <p>📱 <a href="tel:+5566981269801" style="color: #FF6F00cc;">(66) 98126-9801</a></p>
+      <p>📧 <a href="mailto:gabrielschirrmannfarias@gmail.com" style="color: #FF6F00cc;">gabrielschirrmannfarias@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>

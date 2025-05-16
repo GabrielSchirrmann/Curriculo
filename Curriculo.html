@@ -1,69 +1,103 @@
-<html>
+<!DOCTYPE html>
 
-    <head>
-        <style>
-              h2 {
-                color: black;
-                font-family: 'Times New Roman', Times, serif;
-                text-align: center;
-                margin-bottom: 50px;
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> 
+    <title>Currículo - Gabriel Schirrmann Faria</title>
+    <style>
+        .foto {
+            float: right;
+            width: 3cm; /* tamanho menor */
+            height: auto;
+            margin: 0 0 20px 20px;
+            border: 3px ridge #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+
+        @page{
+            size: A4;
+            margin: 2cm;
+        } 
+
+        h1,h2 {
+            color: black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        p {
+            color: black;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        body {
+            background-color: white;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .pagina-a4{
+            width: 21cm;
+            min-height: 29.7cm;
+            margin: auto;
+            padding: 2cm;
+            background: white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            box-sizing: border-box;
+        }
+
+        footer{
+            margin-top: 1.6;
+            margin: 5px 0;
+        }
+
+        @media print{
+            body{
+                background: white;
+                padding: 0;
             }
 
-            h1 {
-                color: black;
-                font-family: 'Times New Roman', Times, serif;
-                text-align: center;
-                margin-top: 50px;
-                margin-bottom: 50px;
+            .pagina-a4{
+                box-shadow: none;
+                margin: 0;
+                width: auto;
+                min-height: auto;
+                padding: 0;
             }
+        }
+    </style>
+</head>
 
-            p {
-                color: black;
-                font-family: 'Times New Roman', Times, serif;
-                
-            }
+<body>
+    <div class="pagina-a4">
+        <img src="foto zueira.jpg" alt="Foto de Gabriel" class="foto">
 
-            body {
-                background-color: gray;
-            }
-        </style>
-        <h2> Currículo</h2>
         <p>Nome: Gabriel Schirrmann Faria</p>
-        </p>Idade: 20 anos</p> 
-        </p>Estado civil: Soltero</p>
-        </p>Nacionalidade: Brasileiro</p> 
-        </p>Endereço: Rua das Acerolas, N° 141, Jardim Celeste</p> 
-        
-    </head>
+        <p>Idade: 20 anos</p> 
+        <p>Estado civil: Solteiro</p>
+        <p>Nacionalidade: Brasileiro</p> 
+        <p>Endereço: Rua das Acerolas, N° 141, Jardim Celeste</p>
 
-        <body>
-            <h1>
-                Formação academica
-            </h1>
+        <h1>Formação academica</h1>
 
-            <p>
-                Ensino medio completo pela Escola Estadual Militar Tiradentes de Sinop "EEMT" (Completo em 2022)
-            </p>
-            <p>
-                Cursando Engenharia da computação na Faculdade de tecnologia de Sinop (Inicio em 2024)
-            </p>
+        <p>Ensino médio completo pela Escola Estadual Militar Tiradentes de Sinop "EEMT" (Completo em 2022)</p>
+        <p>Cursando Engenharia da computação na Faculdade de tecnologia de Sinop (Inicio em 2024)</p>
 
-            <h1>
-                Experiencia proficional
-            </h1>
-            <p>
-                Atendimento ao cliente nas lojas de departamentos Havan (06/09/23 - 20/12/23)
-            </p>
-            <p>
-                Vendedor de eletro nas lojas de departamentos Havan (21/12/23 - 09/09/24)
-            </p>
-            <p>
-                Tecnico de T.I no colégio Alternativo (14/11/24 - atualidade)
-            </p>
-        </body>
+        <h1>Experiência profissional</h1>
 
-    <footer>
-        
-    </footer>
+        <p>Atendimento ao cliente nas lojas de departamentos Havan (06/09/23 - 20/12/23)</p>
+        <p>Vendedor de eletro nas lojas de departamentos Havan (21/12/23 - 09/09/24)</p>
+        <p>Técnico de T.I no colégio Alternativo (14/11/24 - atualidade)</p>
+
+        <footer>
+            <h1>Contatos</h1>
+            <p>Telefone: (66) 98126-9801</p>
+            <p>E-Mail: gabrielschirrmannfarias@gmail.com</p>
+        </footer>
+    </div>
+</body>
 
 </html>
